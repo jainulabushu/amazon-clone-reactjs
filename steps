@@ -1,0 +1,50 @@
+open vs code> in terminal run "npx create-react-app app-name" > it will take some time and dowloads lots for files for react app
+
+delete unnessasary files in src folder> remove files except these App.js, App.css, index.js, index.css and reportWebVital.js
+
+remove all lines in App.css  and run >npm start
+
+1. index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+2. App.js
+
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>wtf?</h1>
+      hiji
+      </div>
+  );
+}
+
+// const Apps = () => {
+//   return <div className="Apps"></div>
+// }
+
+export default App;
+
+3. App.css
+
+* {
+  margin: 0; /*to remove margin*/
+}
