@@ -4,7 +4,11 @@ delete unnessasary files in src folder> remove files except these App.js, App.cs
 
 remove all lines in App.css  and run >npm start
 
-open new terminal> run > npm install @material-ui/core >then run > npm install @material-ui/icons > then run> npm install firebase
+open new terminal> run the below codes to install needed modules
+> npm install @material-ui/core
+> npm install @material-ui/icons 
+> npm install firebase
+> npm install react-currency-format
 
 1. index.js
 
