@@ -4,7 +4,7 @@ delete unnessasary files in src folder> remove files except these App.js, App.cs
 
 remove all lines in App.css  and run >npm start
 
-open new terminal> run "npm install @material-ui/core"
+open new terminal> run "npm install @material-ui/core" >then run > "npm install @material-ui/icons"
 
 1. index.js
 
