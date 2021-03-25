@@ -9,6 +9,8 @@ open new terminal> run the below codes to install needed modules
 > npm install @material-ui/icons 
 > npm install firebase
 > npm install react-currency-format
+> npm install react-dom
+> npm install react-router-dom
 
 1. index.js
 
