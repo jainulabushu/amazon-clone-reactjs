@@ -1,0 +1,181 @@
+1. index.js remains same
+
+
+2. App.js
+
+import React from 'react'
+import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Header from './Header'
+import Login from "./Login"
+// import Fheader from './Fheader/Fheader.js';
+// import Checking from "./Checking"
+
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/checkout">
+            <Header />  
+          </Route>
+          <Route path="/login">
+            <Login />  
+          </Route>
+        </Switch>     
+        {/* <Fheader /> */}
+        {/* <Checking />  */}
+      </div>
+    </Router>
+    
+  );
+}
+
+export default App;
+
+
+3. Header.js
+
+.header {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header__logo {
+  width: 100px;
+  margin: 0 20px;
+  margin-top: 0px;
+  object-fit: contain;
+}
+.header__search {
+  display: flex;
+  flex: 1;
+}
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #cd904d;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header__optionLineOne {
+  font-size: 10px;
+}
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+}
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+4. Header.css
+
+.header {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header__logo {
+  width: 100px;
+  margin: 0 20px;
+  margin-top: 0px;
+  object-fit: contain;
+}
+.header__search {
+  display: flex;
+  flex: 1;
+}
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #cd904d;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header__optionLineOne {
+  font-size: 10px;
+}
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+}
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+5. Login.js
+
+import React from 'react'
+import "./Login.css"
+
+function Login(){
+    return(
+        <div className="login">
+            <div className="login__container">
+                <h1>Sign In</h1>
+                <form>
+                    <h5>Email</h5>
+                    <input type="email"/>
+                </form>
+            </div>
+        </div>
+    )
+}
+
+export default Login
